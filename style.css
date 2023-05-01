@@ -123,10 +123,19 @@ li {
     border-radius: .5rem;
 }
 
+.cardHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cardButtons {
+    display: grid;
+
+    justify-items: end;
+}
+
 #rightMain {
     grid-column: 2/3;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
 }
 
 #trendingBox, #announcementsBox {
