@@ -35,6 +35,10 @@ li {
     font-size: 1.2rem;
     list-style-type: none;
     margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
 }
 
 #dashboardHeader {
@@ -132,6 +136,7 @@ li {
 .cardHeader {
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: .3rem;
 }
 
 .cardButtons {
