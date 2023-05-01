@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="header">Dashboard</div>
+        <div id="dashboardHeader" class="header">Dashboard</div>
         <ul id="sidebarOne">
             <li>Home</li>
             <li>Profile</li>
@@ -26,7 +26,10 @@
     </div>
     <div id="nav">
         <div id="topNav">
-            <div>SearchBar</div>
+            <div id="topNavLeft">
+                <img src="search_FILL0_wght400_GRAD0_opsz48.svg" alt="magnifyingGlass">
+                <input id="searchbar" type="search">
+            </div>
             <div id="topNavRight">
                 <div id="alert">AlertButton</div>
                 <div id="profilePic">ProfilePic</div>
@@ -34,10 +37,12 @@
             </div>
         </div>
         <div id="bottomNav">
-            <div id="profilePicLarge">ProfilePic</div>
-            <div id="welcomeBox">
-                <p id="welcome">Hi there,</p>
-                <p id="userNameTwo">UserName (@UserName)</p>
+            <div id="bottomLeft">
+                <div id="profilePicLarge">ProfilePic</div>
+                <div id="welcomeBox">
+                    <p id="welcome">Hi there,</p>
+                    <p id="userNameTwo">UserName (@UserName)</p>
+                </div>
             </div>
             <div id="bottomRight">
                 <button>New</button>
