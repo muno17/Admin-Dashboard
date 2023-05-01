@@ -9,6 +9,18 @@ body {
     padding:0;
 }
 
+#profilePic {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+#profilePicLarge {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2rem;
+}
+
 button {
     background-color: #BC81BF;
     color: white;
@@ -23,7 +35,7 @@ button {
     background-color: #BC81BF;
     grid-area: 1/1/3/2;
     padding: 1rem;
-    box-shadow: 1px 3px 10px black;
+    box-shadow: 1px 3px 3px black;
 }
 
 ul {
@@ -42,7 +54,11 @@ li {
 }
 
 #dashboardHeader {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: start;
+    align-items: center;
 }
 
 #nav {
@@ -51,9 +67,10 @@ li {
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    box-shadow: 1px 3px 10px black;
+    box-shadow: 1px 1px 10px black;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    z-index: -1;
 }
 
 #topNav {
@@ -71,14 +88,16 @@ li {
 
 #searchbar {
     border-radius: .4rem;
-    width: 30rem;
+    width: 40rem;
     height: 1.5rem;
     box-shadow: 3px 3px 8px black;
 }
 
 #topNavRight {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #bottomNav {
@@ -155,4 +174,15 @@ li {
     padding: 2rem;
     box-shadow: 3px 3px 10px black;
     border-radius: .5rem;
+}
+
+.trendingItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.announcementHeader {
+    font-weight: bold;
 }
